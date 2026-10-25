@@ -1,0 +1,15 @@
+{
+  "name": "zombie-base",
+  "version": "1.0.0",
+  "description": "2D-Coop-Survival aus der Vogelperspektive: Basis bauen, Zombies abwehren, mit Freunden spielen.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/smoke.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "private": true
+}

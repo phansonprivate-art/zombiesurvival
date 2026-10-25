@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zombie Base – Coop Survival</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="join" class="screen">
+    <div class="card">
+      <h1>ZOMBIE <span>BASE</span></h1>
+      <p class="sub">Sammelt Material, baut eine Festung, überlebt die Nacht. Zusammen.</p>
+      <label>Dein Name <input id="name" maxlength="16" autocomplete="off" placeholder="Überlebender"></label>
+      <label>Farbe</label>
+      <div id="colors"></div>
+      <button id="play">Spielen</button>
+      <p class="hint">Freunde öffnen dieselbe Adresse im Browser und spielen in derselben Welt mit.</p>
+    </div>
+  </div>
+
+  <div id="hud" class="hidden">
+    <div id="res"></div>
+    <div id="clock"><div id="time"></div><div id="status"></div></div>
+    <canvas id="minimap" width="168" height="168"></canvas>
+
+    <div id="feed"></div>
+    <div id="chatlog"></div>
+    <input id="chat" class="hidden" maxlength="140" autocomplete="off" placeholder="Nachricht … (Enter senden, Esc abbrechen)">
+
+    <div id="bottom">
+      <div id="hpbar"><div id="hpfill"></div><span id="hptext"></span></div>
+      <div id="hotbar"></div>
+      <div id="buildbar" class="hidden"></div>
+    </div>
+
+    <div id="craft" class="panel hidden">
+      <h2>Werkbank <small>(C schließen)</small></h2>
+      <div id="craftlist"></div>
+    </div>
+
+    <div id="score" class="panel hidden">
+      <h2>Überlebende</h2>
+      <table><thead><tr><th>Name</th><th>Kills</th><th>Tode</th></tr></thead><tbody id="scorebody"></tbody></table>
+    </div>
+
+    <div id="help" class="panel">
+      <h2>Steuerung <small>(H ein/aus)</small></h2>
+      <ul>
+        <li><b>WASD</b> bewegen · <b>Maus</b> zielen</li>
+        <li><b>Linke Maustaste</b> schießen / abbauen / bauen</li>
+        <li><b>1</b> Pistole · <b>2</b> Schrotflinte · <b>3</b> Werkzeug</li>
+        <li><b>Werkzeug</b> fällt Bäume, baut Stein &amp; Metall ab, öffnet Kisten, <b>repariert Wände</b></li>
+        <li><b>B</b> Baumodus: <b>1–7</b> wählen, <b>Linksklick</b> bauen, <b>Rechtsklick</b> abreißen</li>
+        <li><b>C</b> Werkbank (Munition, Medkits, Schrotflinte)</li>
+        <li><b>Q</b> Medkit benutzen · <b>Tab</b> Spieler · <b>Enter</b> Chat</li>
+      </ul>
+      <p>Tagsüber sammeln und bauen. Um <b>22:00</b> kommt die Horde und greift eure Basis an. Jede <b>7. Nacht</b> ist Blutmond.</p>
+      <p class="hint">Alle Rohstoffe gehören dem ganzen Team. Chat-Befehl <code>/neustart</code> startet eine neue Welt.</p>
+    </div>
+
+    <div id="dead" class="hidden"><div>DU BIST TOT</div><small id="deadtimer"></small></div>
+    <div id="banner" class="hidden"></div>
+  </div>
+
+  <div id="lost" class="screen hidden">
+    <div class="card"><h1>Verbindung <span>verloren</span></h1><p class="sub" id="lostmsg">Der Server ist nicht mehr erreichbar.</p><button onclick="location.reload()">Neu verbinden</button></div>
+  </div>
+
+  <script src="shared.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
