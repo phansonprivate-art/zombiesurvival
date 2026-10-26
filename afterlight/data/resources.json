@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "resources": [
+    { "id": "wood", "name": "Holz", "unit": "Stk", "category": "raw", "base_capacity": 300, "start": 80, "hud": true, "color": "#b0804f", "storage": "general", "transport": "shared" },
+    { "id": "stone", "name": "Stein", "unit": "Stk", "category": "raw", "base_capacity": 300, "start": 40, "hud": true, "color": "#a3a39a", "storage": "general", "transport": "shared" },
+    { "id": "ore", "name": "Erz", "unit": "Stk", "category": "raw", "base_capacity": 200, "start": 0, "hud": true, "color": "#c06a3a", "storage": "general", "transport": "shared" },
+    { "id": "metal", "name": "Metall", "unit": "Stk", "category": "processed", "base_capacity": 200, "start": 10, "hud": true, "color": "#8fa3b3", "storage": "general", "transport": "shared" },
+    { "id": "electronics", "name": "Elektronik", "unit": "Stk", "category": "processed", "base_capacity": 80, "start": 0, "hud": true, "color": "#6fd3c0", "storage": "general", "transport": "shared" },
+    { "id": "components", "name": "Bauteile", "unit": "Stk", "category": "processed", "base_capacity": 150, "start": 0, "hud": true, "color": "#e0b25c", "storage": "general", "transport": "shared" },
+    { "id": "food", "name": "Nahrung", "unit": "Rationen", "category": "supply", "base_capacity": 200, "start": 20, "hud": false, "color": "#9ccf5a", "storage": "general", "transport": "shared", "note": "Wird mit der Landwirtschaft (Phase 2) aktiv." },
+    { "id": "water", "name": "Wasser", "unit": "Liter", "category": "supply", "base_capacity": 200, "start": 20, "hud": false, "color": "#5aa7e0", "storage": "general", "transport": "shared", "note": "Wird mit der Bewässerung (Phase 2) aktiv." },
+    { "id": "fuel", "name": "Kraftstoff", "unit": "Liter", "category": "supply", "base_capacity": 120, "start": 0, "hud": false, "color": "#d9534f", "storage": "general", "transport": "shared", "note": "Wird mit dem Generator (Phase 2) aktiv." }
+  ]
+}
