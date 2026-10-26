@@ -1,5 +1,7 @@
 # Zombie Base
 
+> Im Ordner [`afterlight/`](afterlight/) liegt außerdem **AFTERLIGHT**, ein 3D-Koop-Aufbauspiel mit Godot 4 (Meilenstein 1).
+
 2D-Coop-Survival aus der Vogelperspektive, inspiriert von *7 Days to Die*: Tagsüber sammelt ihr Rohstoffe und baut eine Basis, nachts greift die Horde an. Bis zu 8 Freunde spielen gemeinsam in derselben Welt im Browser.
 
 ## Starten
